@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9f5ec;
+    color: #2e7d32;
+  }
+  
+  header {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .benefit {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+  }
+  
+  .benefit:hover {
+    transform: scale(1.02);
+  }
+  
+  .benefit img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    border-radius: 10px;
+  }
+  
+  .benefit p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  button {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2e7d32;
+  }
+  
+  footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e8f5e9;
+  }
+  
+  header {
+    background-color: #388e3c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding-right: 30px;
+  }
+  
+  .text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #4caf50;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .text, .image {
+      text-align: center;
+      padding: 0;
+    }
+  
+    .text {
+      padding-bottom: 20px;
+    }
+  }
+  
