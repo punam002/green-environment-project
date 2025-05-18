@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #2e2e2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 600;
+    color:white;
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #388e3c;
+    color: white;
+}
+
+.nav-link.active {
+    background-color: #2a6a2a;
+    color: white;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 40px;
+}
+
+/* Cards */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    width: 100%;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.8rem;
+    color: #2c6f2c;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+/* Button */
+.btn-primary {
+    display: block;
+    margin: 15px auto 0;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #2a6a2a;
+    transform: scale(1.05);
+}
+
+/* Scrollable content on learn page */
+.page {
+    max-height: 65vh;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* Scrollbar styling for page */
+.page::-webkit-scrollbar {
+    width: 8px;
+}
+
+.page::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.page::-webkit-scrollbar-thumb {
+    background-color: #388e3c;
+    border-radius: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 30px 25px;
+    }
+
+    .btn-primary {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
